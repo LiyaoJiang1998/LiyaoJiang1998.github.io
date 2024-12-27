@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation">
+  <meta property="og:title" content="PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation"/>
+  <meta property="og:description" content="PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation"/>
+  <meta property="og:url" content="https://liyaojiang1998.github.io/projects/PixelMan/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation">
+  <meta name="twitter:description" content="PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="diffusion models, image editing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>PixelMan@AAAI2025</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><img src="static/images/logo.png" style="height: 1em;"/> PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=OSpqcyoAAAAJ&hl=en&oi=ao" target="_blank">Liyao Jiang</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.ca/citations?user=g7GMn3gAAAAJ&hl=en&oi=ao" target="_blank">Negar Hassanpour</a><sup>2</sup>,</span>
+                  <a href="https://scholar.google.ca/citations?user=qXuc8RQAAAAJ&hl=en&oi=ao" target="_blank">Mohammad Salameh</a><sup>2</sup>,</span>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=QZ6heKorvZoC&hl=en&oi=ao" target="_blank">Mohammadreza Samadi</a><sup>2</sup>,</span>
+                  <a href="https://openreview.net/profile?id=~Jiao_He1"target="_blank">Jiao He</a><sup>3</sup>,</span>
+                  <a href="https://openreview.net/profile?id=~Fengyu_Sun1"target="_blank">Fengyu Sun</a><sup>3</sup>,</span>
+                  <a href="https://sites.ualberta.ca/~dniu/Homepage/Home.html" target="_blank">Di Niu</a><sup>1</sup>,</span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Dept. ECE, University of Alberta<br>
+                      Huawei Technologies Canada<br>
+                      Huawei Kirin Solution, China<br>
+                        <em>Proceedings of the 39th Annual AAAI Conference on Artificial Intelligence (AAAI-25)</em></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2412.14283" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Github link -->
+                    <span class="link-block">
+                      <a href="https://github.com/Ascend-Research/PixelMan/" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (Coming Soon)</span>
+                    </a>
+                    </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="section" style="background-color: white; padding: 30px 0;">
+  <div class="container is-max-desktop">
+    <!-- Centered Image and Caption -->
+    <div class="columns is-centered">
+      <figure style="margin: auto; background-color: white;">
+        <p>In this work, we propose PixelMan, an inversion-free and training-free method for achieving consistent object editing via Pixel Manipulation and generation. PixelMan maintains image consistency by directly creating a duplicate copy of the source object at target location in the pixel space, and we introduce an efficient sampling approach to iteratively harmonize the manipulated object into the target location and inpaint its original location. The key to ensuring image consistency is anchoring the output image to be generated to the pixel-manipulated image as well as introducing various consistency-preserving optimization techniques during inference. Moreover, we propose a leak-proof SA manipulation technique to enable cohesive inpainting by addressing the attention leakage issue which is a root cause of failed inpainting.</p>
+        <img src="static/images/teaser.png" alt="Teaser Image" style="display: block; width: 85%; height: auto; margin: auto;">
+        <figcaption class="content has-text-justified">
+          PixelMan achieves consistent object editing for object repositioning with lower latency and fewer inference steps, while better preserving image consistency and achieving cohesive inpainting.
+        </figcaption>
+      </figure>
+      
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent research explores the potential of Diffusion Models (DMs) for consistent object editing, which aims to modify object position, size, and composition, etc., while preserving the consistency of objects and background without changing their texture and attributes. Current inference-time methods often rely on DDIM inversion, which inherently compromises efficiency and the achievable consistency of edited images. Recent methods also utilize energy guidance which iteratively updates the predicted noise and can drive the latents away from the original image, resulting in distortions. In this paper, we propose PixelMan, an inversion-free and training-free method for achieving consistent object editing via Pixel Manipulation and generation, where we directly create a duplicate copy of the source object at target location in the pixel space, and introduce an efficient sampling approach to iteratively harmonize the manipulated object into the target location and inpaint its original location, while ensuring image consistency by anchoring the edited image to be generated to the pixel-manipulated image as well as by introducing various consistency-preserving optimization techniques during inference. Experimental evaluations based on benchmark datasets as well as extensive visual comparisons show that in as few as 16 inference steps, PixelMan outperforms a range of state-of-the-art training-based and training-free methods (usually requiring 50 steps) on multiple consistent object editing tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview -->
+<section class="section" style="background-color: white; padding: 30px 0;">
+  <div class="container is-max-desktop">
+
+    <!-- Centered Title -->
+    <div class="columns is-centered">
+      <div style="text-align: center; width: 100%; margin-bottom: 20px;">
+        <h2 class="title is-3">Method Overview</h2>
+      </div>
+    </div>
+
+    <!-- Centered Image -->
+    <figure style="margin: auto; background-color: white;">
+      <img src="static/images/overview.png" alt="Overview Image" style="display: block; width: 85%; height: auto; margin: auto;">
+      <figcaption class="content has-text-justified">
+        Overview of PixelMan. An efficient inversion-free sampling approach for consistent image editing, which copies the object to target location in pixel-space, and ensure image consistency by anchoring to the latents of pixel-manipulated image. We design a leak-proof self-attention mechanism to achieve complete and cohesive inpainting by mitigating information leakage.
+      </figcaption>
+    </figure>
+    </div>
+  </div>
+
+</section>
+
+<!-- Efficiency Comparison -->
+<section class="section hero is-light" style="padding: 30px 0;">
+  <div class="container is-max-desktop">
+    <!-- Centered Title -->
+    <div class="columns is-centered">
+      <div style="text-align: center; width: 100%; margin-bottom: 20px;">
+        <h2 class="title is-3">Efficiency Comparison</h2>
+      </div>
+    </div>
+
+    <!-- Centered Image and Caption -->
+    <div class="columns is-centered">
+      <figure style="margin: auto;">
+        <img src="static/images/quantitative_efficiency.png" alt="Efficiency Comparison" style="display: block; width: 40%; height: auto; margin: auto;">
+        <figcaption class="content has-text-justified">
+          PixelMan at 16 steps performs 112 fewer NFEs and is 15 seconds faster than DiffEditor (Mou et al. 2024a) on the COCOEE dataset.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Quantitative Section -->
+<section class="section" style="background-color: white; padding: 30px 0;">
+  <div class="container is-max-desktop">
+
+    <!-- Section Title -->
+    <div class="columns is-centered" style="margin-bottom: 30px;">
+      <h2 class="title is-3" style="text-align: center;">Quantitative Results</h2>
+    </div>
+
+    <!-- First Table Image with Title -->
+    <div class="columns is-centered" style="margin: auto; margin-bottom: 10px;">
+      <h2 class="title is-6" style="margin: 0; text-align: center;">COCOEE Dataset</h2>
+    </div>
+    <div class="columns is-centered" style="margin-bottom: 20px;">
+      <figure style="margin: auto; text-align: center;">
+        <img src="static/images/quantitative_cocoee.png" alt="Results Table 1" style="width: 75%; margin: auto;">
+      </figure>
+    </div>
+
+    <!-- Second Table Image with Title -->
+    <div class="columns is-centered" style="margin: auto; margin-bottom: 10px;">
+      <h2 class="title is-6" style="margin: 0; text-align: center;">ReS Dataset</h2>
+    </div>
+    <div class="columns is-centered" style="margin-bottom: 20px;">
+      <figure style="margin: auto; text-align: center;">
+        <img src="static/images/quantitative_res.png" alt="Results Table 2" style="width: 75%; margin: auto;">
+      </figure>
+    </div>
+
+    <!-- Merged Caption -->
+    <div class="columns is-centered" style="margin: auto; margin-bottom: 10px;">
+      <figcaption class="content has-text-left" style="text-align: left;">
+        Quantitative results on the COCOEE and ReS datasets as well as extensive visual comparisons show that PixelMan achieves superior performance in consistency metrics for object, background, and image semantics while achieving higher or comparable performance in IQA metrics. As a training-free method, PixelMan only requires 16 inference steps with lower average latency and a lower number of NFEs than current popular methods.
+      </figcaption>
+    </div>
+
+    <p></p>
+
+  </div>
+</section>
+
+<!-- Other Tasks -->
+<section class="section hero is-light" style="padding: 30px 0;">
+  <div class="container is-max-desktop">
+    <!-- Centered Title -->
+    <div class="columns is-centered">
+      <div style="text-align: center; width: 100%; margin-bottom: 20px;">
+        <h2 class="title is-3">Other Consistent Object Editing Tasks</h2>
+      </div>
+    </div>
+
+    <!-- Centered Image and Caption -->
+    <div class="columns is-centered">
+      <figure style="margin: auto; padding: auto;">
+        <img src="static/images/qualitative_other_tasks.png" alt="Other Consistent Object Editing Tasks" style="display: block; width: 85%; height: auto; margin: auto;">
+        <figcaption class="content has-text-justified">
+          Qualitative examples on other consistent object editing tasks including object resizing, and object pasting.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Visual Comparisons - Image carousel -->
+<section class="hero is-small">
+  <!-- Section Title -->
+  <div class="columns is-centered" style="margin-bottom: 0px; margin-top: 30px;">
+    <h2 class="title is-3" style="text-align: center;">Visual Comparisons</h2>
+  </div>
+
+  <div class="hero-body">
+    <div class="container" style="text-align: center;">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qualitative_cocoee_1.png" alt="Qualitative Comparison" style="width: 50%; margin: auto;"/>
+          <h2 class="subtitle has-text-centered">
+            Additional qualitative comparison on the COCOEE dataset at both 16 and 50 steps.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qualitative_cocoee_2.png" alt="Qualitative Comparison" style="width: 50%; margin: auto;"/>
+          <h2 class="subtitle has-text-centered">
+            Additional qualitative comparison on the COCOEE dataset at both 16 and 50 steps.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qualitative_cocoee_3.png" alt="Qualitative Comparison" style="width: 50%; margin: auto;"/>
+          <h2 class="subtitle has-text-centered">
+            Additional qualitative comparison on the COCOEE dataset at both 16 and 50 steps.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qualitative_res_1.png" alt="Qualitative Comparison" style="width: 50%; margin: auto;"/>
+          <h2 class="subtitle has-text-centered">
+            Additional qualitative comparison on the ReS dataset at both 16 and 50 steps.
+        </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qualitative_res_2.png" alt="Qualitative Comparison" style="width: 50%; margin: auto;"/>
+          <h2 class="subtitle has-text-centered">
+            Additional qualitative comparison on the ReS dataset at both 16 and 50 steps.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @inproceedings{jiang2025pixelman,
+          title = {PixelMan: Consistent Object Editing with Diffusion Models via Pixel Manipulation and Generation},
+          author = {Liyao Jiang and Negar Hassanpour and Mohammad Salameh and Mohammadreza Samadi and Jiao He and Fengyu Sun and Di Niu},
+          booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+          year={2025}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
